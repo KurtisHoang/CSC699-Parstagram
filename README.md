@@ -25,6 +25,6 @@ The following **bonus** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-![](CSC699Hwk5_6.gif)
+![](CSC699Hwk5_6part1.gif)
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
