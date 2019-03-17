@@ -28,6 +28,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             })
         )
         
+        //check if current user is not empty
+        if PFUser.current() != nil {
+            //get the Main.storyboard
+            let main = UIStoryboard(name: "Main", bundle: nil)
+            //instance of FeedNavigationController
+            let feedNavigattionController = main.instantiateViewController(withIdentifier: "TabBarController")
+            //one window per app
+            //window has rootViewController
+            //change rootViewController to feedNavigationController
+            window?.rootViewController = feedNavigattionController
+        }
+        
         return true
     }
 

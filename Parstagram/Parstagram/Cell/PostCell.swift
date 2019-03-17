@@ -14,6 +14,12 @@ class PostCell: UITableViewCell {
     @IBOutlet weak var usernameLabel: UILabel!
     @IBOutlet weak var captionLabel: UILabel!
     
+    @IBOutlet weak var profileImage: UIImageView! {
+        didSet {
+            profileImage.layer.cornerRadius = 15.0
+        }
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
